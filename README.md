@@ -115,12 +115,13 @@ Banco de Dados (PostgreSQL)
 
 ## 👥 Equipe
 
-| Nome | Responsabilidade |
-|------|----------------|
-| Integrante 1 | Frontend |
-| Integrante 2 | Backend |
-| Integrante 3 | Banco de Dados |
-| Integrante 4 | Documentação |
+| Nome | Função |
+|------|--------|
+| Integrante 1 | Frontend (UI/UX) |
+| Integrante 2 | Frontend (Lógica) |
+| Integrante 3 | Backend (API) |
+| Integrante 4 | Banco de Dados |
+| Integrante 5 | Gestão & Qualidade |
 
 ---
 
