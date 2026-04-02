@@ -1,78 +1,87 @@
-# 🏠 CasaCerta  
-### Simulador Inteligente: Financiamento vs Consórcio Imobiliário
+# 🏠 CasaCerta
+### Simulador Comparativo entre Financiamento e Consórcio Imobiliário
 
 ---
 
 ## 📌 Sobre o Projeto
 
-O **CasaCerta** é uma aplicação web desenvolvida com o objetivo de ajudar usuários a tomarem decisões mais conscientes na aquisição de imóveis, comparando **financiamento imobiliário** e **consórcio** de forma clara, prática e personalizada.
+O **CasaCerta** é uma aplicação web desenvolvida com o objetivo de auxiliar usuários na tomada de decisão sobre aquisição de imóveis, por meio da comparação entre **financiamento imobiliário** e **consórcio imobiliário**.
 
-O sistema permite simular diferentes cenários financeiros e gera recomendações com base no perfil do usuário, evitando decisões impulsivas e endividamento a longo prazo.
+A ferramenta busca reduzir a falta de conhecimento financeiro, permitindo simulações detalhadas e fornecendo recomendações baseadas no perfil do usuário.
 
 ---
 
-## 🎯 Problema
+## 🎯 Objetivo
 
-Grande parte das pessoas não compreende corretamente:
+Desenvolver um sistema capaz de:
 
-- Diferença entre financiamento e consórcio  
-- Impacto dos juros ao longo do tempo  
-- Tempo real para aquisição do imóvel  
-- Custo total da operação  
+- Simular financiamento imobiliário
+- Simular consórcio imobiliário
+- Comparar cenários financeiros
+- Exibir custo total e parcelas
+- Gerar recomendações inteligentes
+- Analisar perfil do usuário
+- Gerar relatórios personalizados
 
-Isso frequentemente resulta em escolhas financeiras inadequadas.
+---
+
+## ⚠️ Problema
+
+Muitas pessoas não compreendem as diferenças entre financiamento e consórcio, o que pode resultar em decisões financeiras inadequadas e endividamento a longo prazo.
 
 ---
 
 ## 💡 Solução
 
-O CasaCerta resolve esse problema através de:
+O CasaCerta propõe um simulador inteligente que:
 
-- 📊 Simulações detalhadas  
-- ⚖️ Comparação lado a lado  
-- 📈 Visualização de custos totais  
-- 🧠 Recomendações inteligentes  
+- Considera juros, prazo e entrada
+- Simula lances em consórcios
+- Estima prazo de contemplação
+- Analisa o perfil do usuário
+- Gera recomendações personalizadas
 
 ---
 
 ## 🚀 Funcionalidades
 
-- ✅ Simulação de financiamento imobiliário (SAC / Price)
-- ✅ Simulação de consórcio
-- ✅ Comparação entre cenários
-- ✅ Cálculo de parcelas e custo total
-- ✅ Geração de recomendações
-- 🔜 Cadastro e login de usuários
-- 🔜 Histórico de simulações
-- 🔜 Exportação de relatórios (PDF)
+- 📊 Simulação de financiamento (SAC e Price)
+- 🏦 Simulação de consórcio
+- ⚖️ Comparação entre modalidades
+- 💰 Cálculo de custo total
+- 🎯 Simulação de lances
+- ⏳ Estimativa de contemplação
+- 🧠 Recomendações inteligentes
+- 📄 Relatórios personalizados
+- 🔐 Autenticação de usuários
 
 ---
 
-## 🧱 Arquitetura
+## 🏗️ Arquitetura
 
 O sistema segue uma arquitetura em camadas:
 Frontend (React)
 ↓
-Backend (Node.js + Express)
+Backend (Node.js)
 ↓
 Banco de Dados (PostgreSQL)
 
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🧰 Tecnologias Utilizadas
 
-### 💻 Frontend
+### Frontend
 - React.js
-- CSS Modules / Tailwind
+- CSS Modules / Tailwind CSS
 - Axios
 
-### ⚙️ Backend
+### Backend
 - Node.js
 - Express.js
 - JWT (autenticação)
 
-### 🗄️ Banco de Dados
+### Banco de Dados
 - PostgreSQL
 - Prisma ORM
 
@@ -80,97 +89,123 @@ Banco de Dados (PostgreSQL)
 
 ## 🔄 Fluxo da Aplicação
 
-1. Usuário insere dados:
-   - Valor do imóvel
-   - Entrada
-   - Prazo
-   - Taxas
-
-2. Backend processa:
-   - Cálculo de financiamento
-   - Cálculo de consórcio
-
-3. Sistema retorna:
-   - Comparação
-   - Melhor opção
-   - Dados detalhados
+1. Usuário insere dados financeiros
+2. Backend processa as informações
+3. Sistema calcula cenários
+4. Resultados são retornados ao frontend
+5. Usuário visualiza comparações e recomendações
 
 ---
 
-## 🖼️ Protótipo (Rascunho)
+## 📥 Entrada de Dados
 
-### 🏠 Tela Inicial
-- Apresentação do sistema
-- Botão "Simular"
+- Valor do imóvel
+- Entrada
+- Prazo
+- Taxa de juros
+- Valor de lance (consórcio)
+- Perfil do usuário (renda, objetivo, urgência)
 
-### 📊 Tela de Simulação
-- Formulário com dados financeiros
+---
 
-### 📈 Tela de Resultado
+## 📤 Saída de Dados
+
+- Comparação entre financiamento e consórcio
+- Parcelas mensais
+- Custo total
+- Estimativa de contemplação
+- Impacto do lance
+- Recomendação automática
+- Relatório personalizado
+
+---
+
+## 👥 Público-Alvo
+
+- Pessoas interessadas em adquirir imóveis
+- Jovens em planejamento financeiro
+- Usuários sem conhecimento técnico em finanças
+
+---
+
+## 👤 Cliente do Projeto
+
+Este projeto foi desenvolvido considerando:
+
+- 🎓 **Cliente institucional:** Professor da disciplina CCE  
+- 🧑 **Cliente real:** Lucas Tanaka, potencial comprador de imóvel
+
+A participação do cliente real auxiliou na definição dos requisitos e validação da proposta.
+
+---
+
+## 🧪 Protótipos
+
+### Telas previstas:
+
+- 🏠 Tela inicial
+- 📊 Tela de simulação
+- 📈 Tela de resultados
+
+Com:
+- Inputs financeiros
+- Botões de simulação
 - Comparação visual
-- Gráficos
-- Recomendação
+- Recomendações automáticas
 
 ---
 
-## 👥 Equipe
+## 📅 Planejamento
 
-| Nome | Função |
-|------|--------|
+- Levantamento de requisitos
+- Prototipação
+- Desenvolvimento backend
+- Desenvolvimento frontend
+- Integração
+- Testes
+
+---
+
+## 🛠️ Ambientes Colaborativos
+
+- 🔗 GitHub:  
+  https://github.com/GuilhermeEijiY/SimuladorCasaCerta
+
+- 📋 Trello:  
+  https://trello.com/b/chWzUxG7/simulador-casa-certa
+
+- 📄 Documentação:  
+  https://docs.google.com/document/d/1OlmD1Z8pGnTow8EvsyPQOIwWPt4aUofzTxSWpQflb9M
+
+---
+
+## 👨‍💻 Equipe
+
+| Integrante | Função |
+|----------|------|
 | Integrante 1 | Frontend (UI/UX) |
-| Integrante 2 | Frontend (Lógica) |
-| Integrante 3 | Backend (API) |
+| Integrante 2 | Frontend (Integração) |
+| Integrante 3 | Backend |
 | Integrante 4 | Banco de Dados |
-| Integrante 5 | Gestão & Qualidade |
+| Integrante 5 | Gestão e Documentação |
 
 ---
 
-## 📂 Organização do Projeto
-/casacerta
-├── frontend/
-├── backend/
-├── docs/
-└── README.md
+## 📈 Possíveis Evoluções
 
-
----
-
-## 🛠️ Ferramentas Colaborativas
-
-- 🔗 GitHub: (inserir link)
-- 📋 Trello: (inserir link)
-- 📄 Google Docs: (inserir link)
+- Integração com APIs bancárias
+- Inteligência artificial para recomendações
+- Simulações mais avançadas
+- Dashboard financeiro
 
 ---
 
-## 📅 Roadmap
+## 📌 Status do Projeto
 
-- [x] Definição do projeto  
-- [x] Levantamento de requisitos  
-- [ ] Protótipo das telas  
-- [ ] Implementação do backend  
-- [ ] Implementação do frontend  
-- [ ] Integração  
-- [ ] Testes  
-- [ ] Deploy  
+🚧 Em desenvolvimento (Fase acadêmica - CCE)
 
 ---
 
-## 🧠 Diferenciais
+## 📄 Licença
 
-- Comparação inteligente entre opções
-- Foco em educação financeira
-- Interface simples e acessível
-- Base para expansão com IA no futuro
-
----
-
-## 📜 Licença
-
-Este projeto é acadêmico e foi desenvolvido para fins educacionais.
-
----
-
-## ✨ Contribuição
-
-Sinta-se à vontade para contribuir com ideias, melhorias ou sugestões!
+Este projeto é de caráter acadêmico.
