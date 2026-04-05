@@ -1,92 +1,103 @@
-# 📋 Requisitos do Sistema - CasaCerta
+# 📋 Requisitos do Sistema — CasaCerta
 
-## 📌 1. Visão Geral
-O sistema CasaCerta tem como objetivo simular e comparar financiamento imobiliário e consórcio, auxiliando o usuário na tomada de decisão.
-
----
-
-## 🎯 2. Objetivo Geral
-Desenvolver uma aplicação web capaz de simular e comparar cenários financeiros de aquisição de imóveis.
+## 1. Visão Geral
+O sistema CasaCerta tem como objetivo auxiliar usuários na tomada de decisão entre financiamento imobiliário e consórcio, através de simulações e análises comparativas.
 
 ---
 
-## ✅ 3. Requisitos Funcionais
+## 2. Requisitos Funcionais
 
-### 🔹 RF01 - Simulação de Financiamento
-O sistema deve permitir calcular parcelas com base em:
+### RF01 — Simulação de Financiamento
+O sistema deve permitir simular financiamento imobiliário com base em:
 - Valor do imóvel
-- Entrada
+- Valor de entrada
 - Taxa de juros
 - Prazo
 
 ---
 
-### 🔹 RF02 - Simulação de Consórcio
-O sistema deve calcular:
-- Valor das parcelas
+### RF02 — Simulação de Consórcio
+O sistema deve permitir simular consórcio com:
+- Valor da carta de crédito
 - Taxa administrativa
 - Prazo
 
 ---
 
-### 🔹 RF03 - Comparação
+### RF03 — Comparação
 O sistema deve comparar:
 - Custo total
 - Valor das parcelas
-- Tempo
+- Tempo de aquisição
 
 ---
 
-### 🔹 RF04 - Exibição de Resultados
-O sistema deve mostrar:
+### RF04 — Exibição de Resultados
+O sistema deve exibir:
 - Parcelas mensais
 - Custo total
-- Diferença entre opções
+- Tempo estimado
 
 ---
 
-### 🔹 RF05 - Recomendações
-O sistema deve sugerir a melhor opção com base no perfil do usuário.
+### RF05 — Recomendações
+O sistema deve gerar recomendações com base no perfil do usuário:
+- Renda
+- Urgência
+- Objetivo
 
 ---
 
-### 🔹 RF06 - Autenticação
+### RF06 — Autenticação
 O sistema deve permitir:
-- Cadastro
+- Cadastro de usuário
 - Login
+- Autenticação via JWT
 
 ---
 
-### 🔹 RF07 - Lances no Consórcio
-O sistema deve permitir simular oferta de lances.
+### RF07 — Simulação de Lance
+O sistema deve permitir:
+- Inserir valor de lance
+- Simular impacto na contemplação
 
 ---
 
-### 🔹 RF08 - Contemplação
-O sistema deve estimar tempo de contemplação.
+### RF08 — Estimativa de Contemplação
+O sistema deve estimar o prazo de contemplação com base em:
+- Histórico médio
+- Lance informado
 
 ---
 
-### 🔹 RF09 - Relatórios
-O sistema deve gerar relatórios personalizados.
+### RF09 — Relatórios
+O sistema deve gerar:
+- Relatórios personalizados
+- Comparações detalhadas
 
 ---
 
-## ⚙️ 4. Requisitos Não Funcionais
+## 3. Requisitos Não Funcionais
 
-### 🔸 RNF01 - Usabilidade
+### RNF01 — Usabilidade
 Interface simples e intuitiva.
 
-### 🔸 RNF02 - Performance
-Tempo de resposta menor que 2 segundos.
+### RNF02 — Performance
+Tempo de resposta inferior a 2 segundos.
 
-### 🔸 RNF03 - Responsividade
-Compatível com:
-- Desktop
-- Mobile
+### RNF03 — Compatibilidade
+Compatível com navegadores desktop modernos.
 
-### 🔸 RNF04 - Segurança
-Proteção de dados do usuário.
+### RNF04 — Segurança
+- Uso de JWT
+- Proteção de dados sensíveis
 
-### 🔸 RNF05 - Escalabilidade
-Sistema modular e expansível.
+### RNF05 — Escalabilidade
+Arquitetura modular e organizada.
+
+---
+
+## 4. Público-Alvo
+- Pessoas interessadas em imóveis
+- Jovens planejando finanças
+- Usuários leigos em finanças
