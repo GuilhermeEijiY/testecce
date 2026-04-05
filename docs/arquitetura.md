@@ -1,64 +1,54 @@
-# 🏗️ Arquitetura do Sistema - CasaCerta
+# 🏗️ Arquitetura do Sistema — CasaCerta
 
-## 📌 1. Visão Geral
-O sistema utiliza arquitetura em camadas, separando responsabilidades.
+## 1. Visão Geral
 
----
+O sistema segue uma arquitetura em camadas:
 
-## 🧱 2. Camadas
-
-### 🎨 Frontend (Apresentação)
-- React.js
-- Responsável pela interface do usuário
-- Comunicação com backend via API
+- Frontend (React)
+- Backend (Node.js + Express)
+- Banco de Dados (PostgreSQL)
 
 ---
 
-### ⚙️ Backend (Aplicação)
-- Node.js + Express
-- Responsável pelas regras de negócio
+## 2. Camadas
+
+### 2.1 Frontend
+Responsável por:
+- Interface do usuário
+- Captura de dados
+- Exibição de resultados
+
+**Tecnologias:**
+- React
+- CSS Modules
+- Axios
+
+---
+
+### 2.2 Backend
+Responsável por:
+- Regras de negócio
 - Processamento das simulações
+- Autenticação
+
+**Tecnologias:**
+- Node.js
+- Express
+- JWT
 
 ---
 
-### 🗄️ Banco de Dados
+### 2.3 Banco de Dados
+Responsável por:
+- Persistência de dados
+- Histórico de simulações
+- Usuários
+
+**Tecnologias:**
 - PostgreSQL
 - Prisma ORM
-- Armazenamento de dados do usuário e simulações
 
 ---
 
-## 🔄 3. Fluxo de Dados
-
+## 3. Fluxo de Dados
 Usuário → Frontend → Backend → Banco de Dados → Backend → Frontend
-
----
-
-## 📦 4. Estrutura do Projeto
-casacerta/
-├── frontend/
-├── backend/
-├── database/
-├── docs/
-
----
-
-## 🔌 5. Comunicação
-
-- Protocolo: HTTP
-- Formato: JSON
-- Biblioteca: Axios
-
----
-
-## 🔐 6. Autenticação
-
-- JWT (JSON Web Token)
-- Proteção de rotas
-
----
-
-## 🚀 7. Escalabilidade
-
-- Separação de responsabilidades
-- Possibilidade de integração com APIs externas no futuro
